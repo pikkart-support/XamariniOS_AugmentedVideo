@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamariniOS_AugmentedVideo", "XamariniOS_AugmentedVideo.csproj", "{013DA0F6-9E8E-40C3-B15D-1E28D95FE95A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikkartVideoPlayerBindingLibrary", "PikkartVideoPlayerBindingLibrary\PikkartVideoPlayerBindingLibrary.csproj", "{055E6C75-7101-452B-A6F0-252FAFC345BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{013DA0F6-9E8E-40C3-B15D-1E28D95FE95A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{013DA0F6-9E8E-40C3-B15D-1E28D95FE95A}.Release|iPhone.Build.0 = Release|iPhone
+		{013DA0F6-9E8E-40C3-B15D-1E28D95FE95A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{013DA0F6-9E8E-40C3-B15D-1E28D95FE95A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{055E6C75-7101-452B-A6F0-252FAFC345BB}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{055E6C75-7101-452B-A6F0-252FAFC345BB}.Release|iPhone.Build.0 = Release|Any CPU
+		{055E6C75-7101-452B-A6F0-252FAFC345BB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{055E6C75-7101-452B-A6F0-252FAFC345BB}.Debug|iPhone.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

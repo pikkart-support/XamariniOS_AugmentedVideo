@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhone</Platform>
+    <ProjectGuid>{013DA0F6-9E8E-40C3-B15D-1E28D95FE95A}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TestRecognitionXamarin</RootNamespace>
+    <AssemblyName>TestRecognitionXamarin</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <MtouchExtraArgs>-v -v -v -cxx -gcc_flags "-L${ProjectDir} -F${ProjectDir}    -framework SystemConfiguration  -framework AVFoundation -framework CoreMedia -lSystem  -lsqlite3 -lz  -ObjC"</MtouchExtraArgs>
+    <OptimizePNGs>false</OptimizePNGs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;DEBUG;ENABLE_TEST_CLOUD;__IOSSIMULATOR__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Roberto Avanzi (UCA9RDAL8N)</CodesignKey>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>false</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchExtraArgs>-v -v -v -cxx -gcc_flags "-L${ProjectDir} -F${ProjectDir}    -framework SystemConfiguration  -framework AVFoundation -framework CoreMedia -lSystem  -lsqlite3 -lz  -ObjC"</MtouchExtraArgs>
+    <OptimizePNGs>false</OptimizePNGs>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodesignProvision>PikkartWildCardDevProfile</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="OpenTK-1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="VideoClass\" />
+    <Folder Include="Resources\markers.bundle\" />
+    <Folder Include="Resources\markerImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <None Include="OpenTK.dll.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="RecognitionViewController.cs" />
+    <Compile Include="VideoClass\VideoMesh.cs" />
+    <Compile Include="VideoClass\RenderUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\license.spz" />
+    <BundleResource Include="Resources\media.bundle\busy.png" />
+    <BundleResource Include="Resources\media.bundle\error.png" />
+    <BundleResource Include="Resources\media.bundle\pikkart_keyframe.png" />
+    <BundleResource Include="Resources\media.bundle\play.png" />
+    <BundleResource Include="Resources\media.bundle\pikkart_video.mp4" />
+    <BundleResource Include="Resources\markerImages\pikkartMarker.jpg" />
+    <BundleResource Include="Resources\markers.bundle\3_543.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="PikkartVideoPlayerBindingLibrary\PikkartVideoPlayerBindingLibrary.csproj">
+      <Project>{055E6C75-7101-452B-A6F0-252FAFC345BB}</Project>
+      <Name>PikkartVideoPlayerBindingLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
