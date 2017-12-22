@@ -63,6 +63,12 @@ namespace XamariniOS_AugmentedVideo
             Console.WriteLine("ARLogoFound called! with Id = {0} and patterCode =  {1}", markerId, code.Int64Value);
         }
         
+        [Export ("markerEngineToUpdate:")]
+        void MarkerEngineToUpdate(string markerId) {
+            Console.WriteLine("MarkerEngineToUpdate called! with Id = {0}", markerId);
+
+        }
+
 		#endregion
 		void ApplyCameraGlOrientation(UIInterfaceOrientation orientation) {
 			UIScreen mainScreen = UIScreen.MainScreen;
