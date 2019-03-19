@@ -41,8 +41,8 @@
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="PikkartVideoPlayer.framework">
-      <Kind>Framework</Kind>
+    <NativeReference Include="PikkartVideoPlayer">
+      <Kind>Static</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>
   </ItemGroup>

@@ -16,17 +16,18 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Roberto Avanzi (UCA9RDAL8N)</CodesignKey>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
-    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <MtouchExtraArgs>-v -v -v -cxx -gcc_flags "-L${ProjectDir} -F${ProjectDir}    -framework SystemConfiguration  -framework AVFoundation -framework CoreMedia -lSystem  -lsqlite3 -lz  -ObjC"</MtouchExtraArgs>
     <OptimizePNGs>false</OptimizePNGs>
+    <CodesignProvision>PikkartWildCardDevProfile</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,12 +43,12 @@
     <MtouchFastDev>false</MtouchFastDev>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <MtouchLink>SdkOnly</MtouchLink>
-    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
-    <MtouchExtraArgs>-v -v -v -cxx -gcc_flags "-L${ProjectDir} -F${ProjectDir}    -framework SystemConfiguration  -framework AVFoundation -framework CoreMedia -lSystem  -lsqlite3 -lz  -ObjC"</MtouchExtraArgs>
+    <MtouchExtraArgs>-v -v -v -cxx -gcc_flags "-L${ProjectDir} -F${ProjectDir}  -framework SystemConfiguration  -framework AVFoundation -framework CoreMedia -lSystem  -lsqlite3 -lz  -ObjC"</MtouchExtraArgs>
     <OptimizePNGs>false</OptimizePNGs>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <CodesignProvision>PikkartWildCardDevProfile</CodesignProvision>
@@ -58,6 +59,12 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="OpenTK-1.0" />
+    <Reference Include="Pikkart.ArSdk.Geo">
+      <HintPath>packages\Pikkart.ArSdk.3.5.0\lib\Xamarin.iOS10\Pikkart.ArSdk.Geo.dll</HintPath>
+    </Reference>
+    <Reference Include="Pikkart.ArSdk.Recognition">
+      <HintPath>packages\Pikkart.ArSdk.3.5.0\lib\Xamarin.iOS10\Pikkart.ArSdk.Recognition.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />

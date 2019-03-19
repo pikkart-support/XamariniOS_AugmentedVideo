@@ -64,7 +64,7 @@ namespace PikkartVideoPlayerBindingLibrary
 	// For more information, see http://developer.xamarin.com/guides/ios/advanced_topics/binding_objective-c/
 	//
     
-	[BaseType (typeof (NSObject), Name = "_TtC18PikkartVideoPlayer18PikkartVideoPlayer")]
+	[BaseType (typeof (NSObject))]
 	interface PikkartVideoPlayer {
 		
 		[Export ("loadWithFilename:playImmediately:seekPosition:")]
