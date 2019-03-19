@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{013DA0F6-9E8E-40C3-B15D-1E28D95FE95A}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="RecognitionViewController.cs" Line="236" Column="1" />
+      <File FileName="PikkartVideoPlayerBindingLibrary/ApiDefinition.cs" Line="68" Column="30" />
+      <File FileName="PikkartVideoPlayerBindingLibrary/Structs.cs" Line="1" Column="1" />
+      <File FileName="VideoClass/VideoMesh.cs" Line="110" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XamariniOS_AugmentedVideo" expanded="True">
+            <Node name="PikkartVideoPlayerBindingLibrary" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="NativeReferenceFolder" expanded="True" />
+            </Node>
+            <Node name="XamariniOS_AugmentedVideo" expanded="True" selected="True">
+              <Node name="References" expanded="True" />
+              <Node name="Packages" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="markerImages" expanded="True" />
+                <Node name="media.bundle" expanded="True" />
+              </Node>
+              <Node name="VideoClass" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.XamariniOS__AugmentedVideo automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.b9984644fa672d860a24398e6fbec9a852fedce6" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

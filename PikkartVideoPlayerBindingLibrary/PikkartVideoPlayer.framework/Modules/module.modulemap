@@ -1,4 +1,6 @@
 framework module PikkartVideoPlayer {
-    header "PikkartVideoPlayer-Swift.h"
-    requires objc
+  umbrella header "PikkartVideoPlayer.h"
+
+  export *
+  module * { export * }
 }
